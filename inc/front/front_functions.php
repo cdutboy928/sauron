@@ -296,7 +296,7 @@ jQuery(document).ready(function(){
             <?php 
             if($thumb_url!="" && strpos($thumb_url,'default.png') == false){ ?>
               <span class="zoom">
-                <a href="<?php echo $thumb_url; ?>" class=" " onclick="wdwt_lbox.init(this, 'wdwt-lightbox', <?php echo intval($lbox_width);?> , <?php echo intval($lbox_height);?>); return false;" rel="wdwt-lightbox"><i class="fa fa-search-plus"></i></a>
+                <a href="<?php echo $thumb_url; ?>" class=" " onclick="wdwt_lbox.init(this, 'wdwt-lightbox', <?php echo intval($lbox_width);?> , <?php echo intval($lbox_height);?>); return false;" rel="wdwt-lightbox"><i class="fa fa-search-plus">放大</i></a>
               </span>
             <?php 
             } 
