@@ -296,13 +296,13 @@ jQuery(document).ready(function(){
             <?php 
             if($thumb_url!="" && strpos($thumb_url,'default.png') == false){ ?>
               <span class="zoom">
-                <a href="<?php echo $thumb_url; ?>" class=" " onclick="wdwt_lbox.init(this, 'wdwt-lightbox', <?php echo intval($lbox_width);?> , <?php echo intval($lbox_height);?>); return false;" rel="wdwt-lightbox"><i class="fa fa-search-plus">放大</i></a>
+                <a href="<?php echo $thumb_url; ?>" class=" " onclick="wdwt_lbox.init(this, 'wdwt-lightbox', <?php echo intval($lbox_width);?> , <?php echo intval($lbox_height);?>); return false;" rel="wdwt-lightbox"><b class="fa fa-search-plus" style="font-size:40%;text-align:center;">放大</b></a>
               </span>
             <?php 
             } 
             ?>
              <span class="link_post">
-                <a href="<?php echo get_permalink() ?>" ><i class="fa fa-link"></i>
+                <a href="<?php echo get_permalink() ?>" ><b class="fa fa-link" style="font-size:40%;text-align:center;">详细</b>
                 </a>
             </span>
             </article>
