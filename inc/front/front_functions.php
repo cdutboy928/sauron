@@ -289,10 +289,10 @@ jQuery(document).ready(function(){
         <div class="image_list_item animate zoom-in" style="background: url(<?php echo $background_image; ?>) no-repeat center !important;">
       <?php }  ?>
             <article class="da-animate da-slideFromBottom" style="display: block;">
-              <h3><?php 
-                self::the_title_max_charlength(40);
+              <h5 style="color:white;"><?php 
+                self::the_title_max_charlength(150);
               /*the_title();*/ ?>
-              </h3>
+              </h5>
             <?php 
             if($thumb_url!="" && strpos($thumb_url,'default.png') == false){ ?>
               <span class="zoom">
@@ -302,7 +302,7 @@ jQuery(document).ready(function(){
             } 
             ?>
              <span class="link_post">
-                <a href="<?php echo get_permalink() ?>" ><b class="fa fa-link" style="font-size:40%;text-align:center;">详细</b>
+                <a href="<?php echo get_permalink() ?>" ><b class="fa fa-link" style="font-size:40%;text-align:center;">详情</b>
                 </a>
             </span>
             </article>
