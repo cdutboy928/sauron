@@ -685,6 +685,7 @@ div#pagination{
 header, #header {
   position:relative;
   width:100%;
+  height:100px;
   float: left;
   top: 0
 }
@@ -916,15 +917,21 @@ header, #header {
 }
 
 #logo {
-  position: relative;
-  max-width:600px;
+  position: absolute;
+  left:0px;
+  top:0px;
+  max-width:1000px;
   margin: 0 64px 10px 24px; 
   display: inline-block;
   
 }
 
 #logo h1 {
-  position: relative;
+  position: absolute;
+  left:100px;
+  top:0px;
+  width:300px;
+  text-align:left;
   font-size: 36px;
   padding:10px  0 10px 0;
   margin:6px 0 4px 0;
@@ -932,14 +939,26 @@ header, #header {
 
 }
 
-#header-middle #logo {min-height:60px;}
+#logo h2 {
+       position:relative;
+       top:65px;
+       left:100px;
+       width:300px;
+       text-align:left;
+       font-size:80%;
+       color:blue;
+       //padding: 10px 0 10px 0;
+       //margin: 6px 0 4px 0;
+}
+
+#header-middle #logo {min-height:100px;}
 
 #logo img { 
-  position: relative;
-  left:10px;
-  top:10px;
-  width:300px;
-  height:300px;
+  position: absolute;
+  left:-0px;
+  top:0px;
+  width:100px;
+  height:100px;
   //max-width: 160px;
 }
 
@@ -949,7 +968,7 @@ header, #header {
 }
 
 
-.phone .top-nav-list,
+.p100hone .top-nav-list,
 .phone .top-nav-list *{
   width: calc(100% - 20px);
   text-align: left;

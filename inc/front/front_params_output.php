@@ -493,12 +493,16 @@ class sauron_front extends WDWT_frontend {
       ?> 
       <a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
         <img id="site-title" src="<?php echo $logo_img; ?>" alt="logo">
+        
+        <h1><?php echo $logo_text; ?></h1>
+        <h2>--这里有你要收藏的微信二维码！！！</h2>
       </a>
       <?php 
     elseif($logo_type=='text'):
       ?>
       <a id="logo"  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
         <h1><?php echo $logo_text; ?></h1>
+        <h2>--这里有你要收藏的微信二维码！！！</h2>
       </a>
       <?php 
     endif;
